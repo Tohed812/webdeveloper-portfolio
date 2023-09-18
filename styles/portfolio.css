@@ -1,4 +1,4 @@
-/* Common shared styles */
+/* ------ Common shared styles ------- */
 
 body {
   font-family: "Lato", sans-serif;
@@ -8,6 +8,8 @@ body {
 .color-primary {
   color: #fd6e0a;
 }
+
+/* Common Button */
 
 .btn-primary {
   border-radius: 5px;
@@ -19,32 +21,68 @@ body {
   padding: 15px 25px;
 }
 
+/* Common Sections */
 
-
-
-/* header styles */
-.header{
-  background-color:#FFF8F3;;
+.section-title {
+  color: #181818;
+  text-align: center;
+  font-size: 35px;
+  font-weight: 700;
 }
 
-.banner{
-   padding: 30px 30px 30px 150px;
-   display: flex;
-   align-items: center;
+.section-description {
+  color: #757575;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
 }
 
-.banner .profile-pic{
-    width: 500px;
+/* ------- HEADER ------- */
+
+.header {
+  background-color: #fff8f3;
+  background-image: url(../images/header_bg.png);
+  background-repeat: no-repeat;
+  background-position: bottom right;
 }
 
+/* Banner styles */
 
-/* nav related styles */
+.banner {
+  padding: 30px 30px 0px 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.banner .profile-pic {
+  width: 500px;
+}
+
+.banner-greeting {
+  font-size: 45px;
+  color: #474747;
+  margin-bottom: 0px;
+}
+
+.banner-title {
+  font-size: 85px;
+  font-weight: 700;
+  margin-top: 5px;
+  margin-bottom: 0px;
+}
+
+.banner-description {
+  margin-top: 5px;
+}
+
+/* nav styles */
 
 nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0px 200px;
+  margin: 0px 200px;
 }
 
 .nav-title {
@@ -66,4 +104,179 @@ nav li {
 nav a {
   text-decoration: none;
   color: #474747;
+}
+
+/* ------ MAIN SECTION ------ */
+
+main {
+  max-width: 1140px;
+  margin: 0px auto;
+}
+
+main section {
+  margin-top: 130px;
+}
+
+/* About Me Section */
+
+.section-about-me {
+  padding: 130px;
+  border-radius: 10px;
+  background: #fff8f3;
+  margin: 130px 0px;
+}
+
+.about-info-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.about-info {
+  text-align: center;
+}
+
+.info-title {
+  color: #474747;
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 0px;
+}
+
+.info-description {
+  color: #474747;
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 4px;
+}
+
+/* What I do section */
+
+#id-what-I-do-description {
+  margin: 0px auto;
+  padding: 10px 100px;
+}
+
+#id-what-I-do-title {
+  margin: 20px auto;
+}
+
+.skills-container {
+  display: flex;
+  gap: 24px;
+}
+
+.skill {
+  border-radius: 5px;
+  background: #fff;
+  box-shadow: 0px 6px 50px 0px rgba(0, 0, 0, 0.06);
+  padding: 30px;
+}
+
+.skill-description {
+  color: #757575;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+/* A Summary of my Resume Section */
+
+.resume-container {
+  display: flex;
+  margin-top: 110px;
+  gap: 70px;
+}
+
+hr {
+  margin: 30px auto;
+  background: #d1d1d1;
+  height: 1px;
+}
+
+.resume-column-title {
+  color: #474747;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.resume-item-title {
+  color: #474747;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 0px;
+}
+
+.resume-item-institute {
+  color: #757575;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: normal;
+  margin-top: 5px;
+}
+
+.resume-item-description {
+  color: #757575;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  width: 511px;
+}
+
+.download-cv-btn {
+  text-align: center;
+  margin-top: 30px;
+}
+
+/* ------ Footer ------ */
+
+footer {
+  margin-top: 130px;
+  background: #fff8f3;
+  display: flex;
+  gap: 100px;
+  padding: 130px 200px;
+}
+
+.footer-column {
+  width: 50%;
+}
+
+.footer-title {
+  color: #181818;
+  font-size: 35px;
+  font-weight: 700;
+
+  margin-bottom: 20px;
+}
+
+.footer-description {
+  color: #474747;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  margin-bottom: 30px;
+}
+
+.social-links a {
+  margin-right: 24px;
+}
+
+/* form */
+
+.form-contact input[type="text"],
+.form-contact input[type="email"],
+textarea {
+  display: block;
+  margin-bottom: 25px;
+  padding: 18px 30px;
+  color: #757575;
+  border: 0;
+  border-radius: 5px;
+  width: 461px;
+}
+
+#submit-btn {
+  color: white;
 }
